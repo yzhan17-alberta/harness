@@ -84,11 +84,9 @@
 
 | 局限 | 原文依据 |
 |---|---|
-| 作者自认：只在显式指标 benchmark 上评估；依赖信息量足够的 teacher-student 对比；只覆盖可由 prompt 传达的程序性知识。 | Limitations |
-| 统计显著性/方差：每个分数为单次完整评测，无重复、无 std、无检验；Table 2 中 Pairwise 59.0、Batch 59.4、Student-only 60.1 的差异以及 Group 2 SearchQA（SkillOpt 80.3 vs SKILL-KD 80.6）、DocVQA（91.4 vs 92.2）的差距在无方差下无法判定。 | App. A, Table 1, Table 2 |
+| 文章limitation：只在显式指标 benchmark 上评估；依赖信息量足够的 teacher-student 对比；只覆盖可由 prompt 传达的程序性知识。 | Limitations |
 | 成本未报告：无 token、费用、wall-clock、consolidation agent 调用轮数；无法与 baseline 做预算匹配比较。 | App. A（只给硬件与 API 说明） |
-| 内部核对：Student-only（Table 2，60.1）与 w/o Teacher（Table 3，62.1）都只用 student 失败轨迹；二者差别（Student-only 无 adaptive 重跑、w/o Teacher 保留重跑）只由 §5.1 "without behavioral validation" 与 §5.2 "iterative refinement alone" 的措辞暗示，正文未明确定义，2.0 的差距无法归因。 | §5.1, §5.2, Table 2, Table 3 |
-| 内部核对："homogeneous vs heterogeneous" 结论来自两组不同 student、不同 teacher、不同分数的比较，不是受控实验。 | §4.1 |
-| 内部核对：ALFWorld 最终库仅 4 条规则，各对应一类任务模板（看灯、清洗、冷却、加热后放置）；"from empty library" 只由 No Skill = 0 rules 暗示，未明说。 | App. C, Table 2 |
-| 无回归检查：patch 只在当前实例上验证，未检查对已解决实例的影响；无 held-out 验证集用于接受 patch。 | §3.2, §4 Setting |
-| 未测项：同一库跨 student/跨 benchmark 迁移、弱→强方向、与成熟 harness 结合、哪些 benchmark 使用原生划分。 | §4 Setting, App. A |
+| Student-only（Table 2，60.1）与 w/o Teacher（Table 3，62.1）都只用 student 失败轨迹；二者差别（Student-only 无 adaptive 重跑、w/o Teacher 保留重跑）只由 §5.1 "without behavioral validation" 与 §5.2 "iterative refinement alone" 的措辞暗示，正文未明确定义，2.0 的差距无法归因。 | §5.1, §5.2, Table 2, Table 3 |
+
+
+
