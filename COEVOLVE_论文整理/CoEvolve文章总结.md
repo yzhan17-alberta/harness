@@ -82,12 +82,8 @@
 
 | 局限 | 原文依据 |
 |---|---|
-| 作者自认：SFT-corr 未完全关闭弱模型与专家差距（+1.7 vs 专家领先 15.6），归因于轻量 LoRA 的上限；未来需结合 RL。 | §3.4, §4 |
-| 作者自认：harness 演化目前不知道模型之后会被微调，两臂是顺序而非联合优化；多轮 co-evolution 未实验。 | §4, Fig 1 |
-| 作者自认：因环境改动，绝对数字可能不与 Yang et al. 2026 直接可比。 | §3.1 |
-| 覆盖范围（原文可见）：Gemma 只在 Webarena 一个任务复现，且无 SFT-corr 结果；只测弱→强单方向迁移；没有同家族版本升级、没有 SFT 后重新演化 harness、没有 budget-matched 的 test-time-scaling 对照（均未说明）。 | §3.3.2, §3.2 |
-| 统计显著性/方差：只报 3 runs 的 SEM，无显著性检验；SFT-corr 的 Web +5.6 建立在行 2 ±5.09 与行 7 ±2.22 的 SEM 之上，"within noise" 为作者判断。SFT-corr 的训练种子数未说明；rank 16/64 取较好者的选择切分未说明。 | Table 1, App. B |
-| 核对出的内部不一致 1：Table 1 行 4 括号内的 Δ（Avg +15.6）是相对行 2（caption 明说），而 §3.2 的 "+9.2 on average" 是行 3→4；两个数都成立但口径不同。 | Table 1 caption, §3.2 |
-| 核对出的内部不一致 2：§1 贡献 (i) 称专家在 h* 上"matches or exceeds its own default-harness performance"，但 Table 1 行 3→4 中 Attn 97.4→97.0、Budget 97.2→93.2 是下降。 | §1, Table 1 行 3–4 |
-| 核对出的内部不一致 3：App. B 写 "The Gemma replication (Appendix C)"，但 Gemma 复现在 §3.3.2，App. C 是分析方法；App. A 的模型名写作 gemma4-26B-A4B，正文为 gemma-4-26b-a4b-it。 | App. A, App. B, §3.3.2 |
-| 核对出的解释缺口：Table 3 中 base 模型在 h0 与 h* 下 planning 失败占比几乎相同（0.9 vs 1.1），"h* 围绕模型 native planning 演化"的因果解释未被直接验证；LLM-as-judge 分类的一致性未报告。 | Table 3, App. C |
+| 作者写到：SFT-corr 未完全关闭弱模型与专家差距（+1.7 vs 专家领先 15.6），归因于轻量 LoRA 的上限；未来需结合 RL。 | §3.4, §4 |
+| 作者：harness 演化目前不知道模型之后会被微调，两臂是顺序而非联合优化；多轮 co-evolution 未实验。 | §4, Fig 1 |
+| 作者：因环境改动，绝对数字可能不与 Yang et al. 2026 直接可比。 | §3.1 |
+| 覆盖范围：Gemma 只在 Webarena 一个任务复现，且无 SFT-corr 结果；只测弱→强单方向迁移；没有同家族版本升级、没有 SFT 后重新演化 harness、没有 budget-matched 的 test-time-scaling 对照（均未说明）。 | §3.3.2, §3.2 |
+
