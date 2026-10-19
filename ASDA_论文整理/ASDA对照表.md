@@ -53,4 +53,4 @@
 | 换任务 | 未测：算术与非算术各自独立蒸馏；跨领域迁移列为未来工作。 | §4.2；§6 Future Work |
 | 换执行环境 | 未说明。 | — |
 | 换 Harness 实现 | 未说明；skill 文件声称兼容 Agent Skills 标准，但未在其他 harness 上评估。 | §3.1；Abstract |
-| 补充 | 作者自认：单基准、单模型家族（Claude 同时担任学生与教师），不能确定分类法、skill 格式、精炼动态是否迁移到其他领域或架构；OCR 文本可能让 skill 编码伪影启发式，回归率可能被高估；纯基准评估，生产价值未验证；selector 整包加载导致不必要指引，未来做 pattern 级选择与低价值 skill 剪枝。 | §6 Limitations；§6 Future Work |
+| 补充 | 作者写到：单基准、单模型家族（Claude 同时担任学生与教师），不能确定分类法、skill 格式、精炼动态是否迁移到其他领域或架构；OCR 文本可能让 skill 编码伪影启发式，回归率可能被高估；纯基准评估，生产价值未验证；selector 整包加载导致不必要指引，未来做 pattern 级选择与低价值 skill 剪枝。 | §6 Limitations；§6 Future Work |
