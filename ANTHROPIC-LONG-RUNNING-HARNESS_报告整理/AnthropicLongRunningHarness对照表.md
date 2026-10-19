@@ -53,4 +53,4 @@
 | 换任务 | V1 跑游戏制作器，V2 跑 DAW；前端设计实验另有 Dutch art museum 等 prompt；未在同一任务上比较两版 harness。 | "Running the harness"；"Results from the updated harness" |
 | 换执行环境 | 未说明。 | — |
 | 换 Harness 实现 | 未说明（均基于 Claude Agent SDK）。 | — |
-| 补充 | 作者自认：evaluator 仍漏掉小布局问题与深层嵌套 bug，"more verification headroom"；Claude 不能听，QA 对音乐品味无效；evaluator 是否值得取决于任务相对模型能力边界的位置，不是固定的是/否；随着模型进步 harness 组合空间"moves"而非缩小。 | "Running the harness"；"Removing the sprint construct"；"Results…"；"What comes next" |
+| 补充 | 作者写到：evaluator 仍漏掉小布局问题与深层嵌套 bug，"more verification headroom"；Claude 不能听，QA 对音乐品味无效；evaluator 是否值得取决于任务相对模型能力边界的位置，不是固定的是/否；随着模型进步 harness 组合空间"moves"而非缩小。 | "Running the harness"；"Removing the sprint construct"；"Results…"；"What comes next" |
