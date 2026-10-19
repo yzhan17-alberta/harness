@@ -79,8 +79,8 @@
 
 | 局限 | 原文依据 |
 |---|---|
-| 作者自认：内部使用与评测起初未复现；测试用的内部版本与公开版本不同；原评测集不够广；bug 处于 context 管理、API 与 extended thinking 的交叉处且只在角落情况出现。 | 开头段；"A caching optimization…"；"Going forward" |
-| 统计显著性/方差：3% 下降无单位（绝对/相对）、无置信区间、无样本数、无运行次数；评测名称未给出。 | "A system prompt change…" |
-| 内部核对："In combination with other prompt changes" 表明不止该行有变化，但其他改动是什么、各自影响多少未说明；回退后各模型的恢复数字未说明。 | "A system prompt change…" |
-| 内部核对：上线前测试是否在所有受影响模型上分别进行未说明；effort 变更"slightly lower intelligence"也无数字。 | "A change to Claude Code's default reasoning effort" |
-| 未说明：用户报告的规模；受影响流量比例；ablation 的成本与次数。 | — |
+| 作者写到：内部使用与评测起初未复现；测试用的内部版本与公开版本不同；原评测集不够广；bug 处于 context 管理、API 与 extended thinking 的交叉处且只在角落情况出现。 | 开头段；"A caching optimization…"；"Going forward" |
+
+| 核对发现："In combination with other prompt changes" 表明不止该行有变化，但其他改动是什么、各自影响多少未说明；回退后各模型的恢复数字未说明。 | "A system prompt change…" |
+| 核对发现：上线前测试是否在所有受影响模型上分别进行未说明；effort 变更"slightly lower intelligence"也无数字。 | "A change to Claude Code's default reasoning effort" |
+
