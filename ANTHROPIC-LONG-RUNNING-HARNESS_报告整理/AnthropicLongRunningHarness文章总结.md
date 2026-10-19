@@ -80,9 +80,9 @@
 
 | 局限 | 原文依据 |
 |---|---|
-| 作者自认：evaluator 仍有 verification headroom（漏小布局问题与深层 bug）；Claude 不能听，QA 对音乐无效；DAW 远非专业软件，agent 作曲能力弱；游戏版仍有产品直觉缺口（流程不引导先建 sprite）。 | "Running the harness"；"Results from the updated harness" |
-| 统计显著性/方差：无任何量化结果指标，每种配置一次运行，无重复、无方差、无检验。 | 全文 |
-| 内部核对：成本表跨版本比较的是不同任务（游戏制作器 vs DAW）和不同模型，V1→V2 的时长/费用下降混合了模型、harness 与任务三个因素。 | 两张成本表 |
-| 内部核对：evaluator 被描述为移到"a single pass at the end of the run"，但 DAW 成本表显示三轮 QA（R1/R2/R3）；两者关系未解释。 | "Removing the sprint construct"；"Results from the updated harness" 成本表 |
-| 内部核对：context reset 是因相信 Opus 4.5 不再需要而去掉，并未展示保留它会有害；evaluator 的保留基于"continued to add obvious value"，未描述移除实验。 | "The architecture"；"Removing the sprint construct" |
-| 未说明：DAW 运行使用的模型（只能从上下文推断为 Opus 4.6）；逐组件移除各跑了几次；evaluator 分数的具体数值；"old harness on new model unchanged"的量化表现。 | — |
+| 作者写到：evaluator 仍有 verification headroom（漏小布局问题与深层 bug）；Claude 不能听，QA 对音乐无效；DAW 远非专业软件，agent 作曲能力弱；游戏版仍有产品直觉缺口（流程不引导先建 sprite）。 | "Running the harness"；"Results from the updated harness" |
+
+| 成本表跨版本比较的是不同任务（游戏制作器 vs DAW）和不同模型，V1→V2 的时长/费用下降混合了模型、harness 与任务三个因素。 | 两张成本表 |
+
+
+
