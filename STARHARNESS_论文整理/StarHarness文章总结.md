@@ -87,8 +87,8 @@
 | （作者）树搜索→爬山为顺序阶段，描述两种模式如何互补，不是因果的 head-to-head 比较。 | §3.3 |
 | （作者）AutomationBench 用的 Finance-100 子集与 Stirrup harness 与原基准论文默认设置不同，分数不可直接比较。 | §4.1 |
 | （作者）Claude 参考分（Fable 5 48.1%、Sonnet 5 35.9%、Opus 4.8 max 35.5%）是外部 Artificial Analysis 参考，不属于受控的 baseline–StarHarness 比较。 | §4.3；Fig. 3 |
-| 统计显著性/方差：未说明；全部结果为 40 / 103 / 100 题上的单一数值，重复次数未说明，无方差、无检验。ITBench 一题 = 2.5 pp。 | Tables 1–5 |
-| （我核对后发现）Table 1 中 GPT-5.5 在 EnterpriseOps-Gym 使用 high reasoning，而其他 GPT 行均为 medium；该行的 +10.7 pp 与其他行不是同一 reasoning 设置下的比较，原文未解释。 | Table 1 |
-| （核对）Table 1 中 ITBench 的 Qwen 模型是 Qwen3.5-27B，另两个基准是 Qwen3.6-27B，原文未解释。 | Table 1 |
+
+| （核对后发现）Table 1 中 GPT-5.5 在 EnterpriseOps-Gym 使用 high reasoning，而其他 GPT 行均为 medium；该行的 +10.7 pp 与其他行不是同一 reasoning 设置下的比较，原文未解释。 | Table 1 |
+| （核对）Table 1 中 ITBench 的 Qwen 模型是 Qwen3.5-27B，另两个基准是 Qwen3.6-27B | Table 1 |
 
 
