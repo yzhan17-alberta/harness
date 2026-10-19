@@ -86,12 +86,10 @@
 
 | 局限 | 原文依据 |
 |---|---|
-| 作者自认：方差刻画——只有 200 步做 4 trials，25/50/100 步与 Nemotron 全部单 trial。 | §9, §6.2, §7.2 |
-| 作者自认：长度混淆——精炼 guidance 长 63%，未做 padding/truncation 消融，"模型只是受益于更多 prompt tokens"的可能性仍开放。 | §9, §3.2 |
-| 作者自认：只在一个能跑通循环的模型上验证；Nemotron 失败可能部分源于 prompt 不匹配；其他 scaffold（上下文摘要、树搜索）可能不同。 | §9, §7.3 |
-| 作者自认：probe 集/随机种子敏感性未测；Django 占 46%，非 Django 仓库最少 1–2 实例，无法做 per-repo 显著性检验；file-structure 消融（定位假设的直接检验）未做；跨模型只测 incidental transfer。 | §9, §6.4, §7.4 |
-| 覆盖范围（原文可见）：只测强→弱、跨家族单方向迁移，无同家族版本升级、无 weak→strong 反向；无采样数（best-of-N）对照，只扫步数；无人工撰写 guidance 对照；16k 截断使绝对值偏低（22–35%，前沿系统 >55%）。 | §7, §6.2, §8 |
-| 统计显著性/方差：主结果 SD 1.4–2.9 pp 且有混合效应检验；但 §7.2 以"trial-level variance negligible at n=500"为由只跑单 trial，而 Table 11 中 Nemotron 三条件相差 1.4–3.8 pp，处于主实验 1–2 个 SD 之内，其排序不可视为已复现（13.2% 的崩溃远超噪声，不受此影响）。 | §7.2, Table 4, Table 11 |
-| 核对出的内部不一致 1：Table 10 写 Qwen 平均 2,753 字符、比 static_kb 多 1,065，而 Table 1 平均为 2,754，与 1,687 之差为 1,067（舍入级差异）。 | Table 1, Table 10 |
-| 核对出的内部不一致 2：§6.3 称 no_context 在四个预算下"flat at 22.8–27.6%"，但 Table 9 的 no_context 行为 24.4 / 27.6 / 23.6 / 25.5；22.8 是 Table 4 中 T1 的 200 步单 trial 值，口径混用。 | §6.3, Table 9, Table 4 |
-| 核对出的口径差异：§8 称 42% 实例在 any-trial 阈值下三条件都解不了，而 Table 6 的 hard core 342/500（68%）用的是 ≥3/4 trials 阈值；两者阈值不同，非矛盾但易混。 | §8, Table 6 |
+| 作者写到：方差刻画——只有 200 步做 4 trials，25/50/100 步与 Nemotron 全部单 trial。 | §9, §6.2, §7.2 |
+| 作者：长度混淆——精炼 guidance 长 63%，未做 padding/truncation 消融，"模型只是受益于更多 prompt tokens"的可能性仍开放。 | §9, §3.2 |
+| 作者：只在一个能跑通循环的模型上验证；Nemotron 失败可能部分源于 prompt 不匹配；其他 scaffold（上下文摘要、树搜索）可能不同。 | §9, §7.3 |
+| 作者：probe 集/随机种子敏感性未测；Django 占 46%，非 Django 仓库最少 1–2 实例，无法做 per-repo 显著性检验；file-structure 消融（定位假设的直接检验）未做；跨模型只测 incidental transfer。 | §9, §6.4, §7.4 |
+| 覆盖范围：只测强→弱、跨家族单方向迁移，无同家族版本升级、无 weak→strong 反向；无采样数（best-of-N）对照，只扫步数；无人工撰写 guidance 对照；16k 截断使绝对值偏低（22–35%，前沿系统 >55%）。 | §7, §6.2, §8 |
+
+
