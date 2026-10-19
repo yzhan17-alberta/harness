@@ -79,11 +79,9 @@
 
 | 局限 | 原文依据 |
 |---|---|
-| 作者自认：Terminal-Bench 上的负面结果可能源于模型能力不足、训练期对该基准的优化、分数饱和或基准对 harness 不敏感，并未严格区分。 | §5 |
-| 作者自认：Terminal-Bench 上不计 harness 修改成本，预算匹配实际上偏向 harness 方法（作者认为计入只会强化其负面结论；但对游戏上的正面结论未讨论此影响）。 | App. A.1 "Cost" |
-| 作者自认：Table 12 的操作计数衡量使用频率而非价值；EdgeBench 上 meta agent 有时忽略广度探索。 | App. B.2；§5.3 |
-| 作者自认：Terminal-Bench 的结论不外推——长程游戏上 Harness Scaling 优于 Sequential Refinement；但该结论只覆盖逐任务的 harness scaling，不涉及可复用 harness 的泛化。 | §5；§5.1 |
-| 统计显著性/方差：所有结果仅 2 次独立运行取均值，未报方差、置信区间或检验；Table 3 中 ±1.2 / −1.4 的差异、Table 8 标题"在 run-to-run 方差之内"均无数值支持；ARC-AGI-3 重复次数未说明。 | §4.1；Table 3；Table 8；App. B.1 |
-| 核对出的内部不一致：同一"direct sampling using initial harness"设定在 Table 1 与 Table 2 数字不同（GPT-5.4 75.3 vs 75.9；GPT-5.4 mini 59.4 vs 56.9），Table 7 与 Table 8 的 K=10 direct sampling 也不同（69.5 vs 68.5），应是不同批次运行，侧面反映 run 间噪声约 0.5–2.5 分。 | Table 1；Table 2；Table 7；Table 8 |
-| 核对出的表述差异：摘要称 ARC-AGI-3 "improves over the search baseline by 80%"、EdgeBench "11%"，正文分别为 +79.0% / +81.0%（相对 [VISTA*]）和 +13.3% / +8.5%（相对 Sequential Refinement），摘要数字为两模型相对增益的约略平均；§1 则称对比对象为 "fixed-harness sequential refinement"。 | Abstract；§1；§5.2；§5.3 |
+| 作者写到：Terminal-Bench 上的负面结果可能源于模型能力不足、训练期对该基准的优化、分数饱和或基准对 harness 不敏感，并未严格区分。 | §5 |
+| 作者：Terminal-Bench 上不计 harness 修改成本，预算匹配实际上偏向 harness 方法（作者认为计入只会强化其负面结论；但对游戏上的正面结论未讨论此影响）。 | App. A.1 "Cost" |
+| 作者：Table 12 的操作计数衡量使用频率而非价值；EdgeBench 上 meta agent 有时忽略广度探索。 | App. B.2；§5.3 |
+| 作者：Terminal-Bench 的结论不外推——长程游戏上 Harness Scaling 优于 Sequential Refinement；但该结论只覆盖逐任务的 harness scaling，不涉及可复用 harness 的泛化。 | §5；§5.1 |
+| 不一致：同一"direct sampling using initial harness"设定在 Table 1 与 Table 2 数字不同（GPT-5.4 75.3 vs 75.9；GPT-5.4 mini 59.4 vs 56.9），Table 7 与 Table 8 的 K=10 direct sampling 也不同（69.5 vs 68.5），应是不同批次运行，侧面反映 run 间噪声约 0.5–2.5 分。 | Table 1；Table 2；Table 7；Table 8 |
 | 未评估：跨模型、跨基准、跨 harness 实现的 harness 迁移；从成熟 harness 起步的 Terminal-Bench 实验；删除 / 回滚类编辑的量化；比 GPT-5.4 mini 更小的模型。 | Table 6；§4.4；§5.1；App. A.2 |
