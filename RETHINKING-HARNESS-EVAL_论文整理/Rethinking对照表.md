@@ -55,4 +55,4 @@
 | 换任务 | 仅测同基准内 held-out：Table 3 / Table 9，平均增益 +0.0 / −0.3，作者结论是"编码了任务特定捷径而非更好的 harness 设计原则"。ARC-AGI-3 与 EdgeBench 按设计是逐任务优化，"不是寻找单一可迁移的 harness"。 | §4.4；Table 3；Table 9；§5.1 |
 | 换执行环境 | 未测。三个基准各用不同后端（E2B 沙盒 / Docker / Kubernetes），但没有把演化出的 harness 换到另一环境运行的实验。 | App. A.1；Table 10；Table 14 |
 | 换 Harness 实现 | 未测。起点 harness 不同（Terminal-Bench 最小 bash harness；ARC-AGI-3 VISTA*；EdgeBench Claude Code CLI / Codex CLI），但没有把演化结果移植到另一 harness 实现的实验。 | App. A.1；§5.2；§5.3 |
-| 补充 | 作者自认：Terminal-Bench 结果可能源于模型不够强、训练期已针对 Terminal-Bench 优化、分数已高、或 Terminal-Bench 对 harness 不敏感（最小 shell + 基础 prompt 已够）；Terminal-Bench 上的结论不外推到 ARC-AGI-3 / EdgeBench（那里 Harness Scaling 优于 Sequential Refinement）；Table 12 的计数"衡量使用而非价值"；EdgeBench 上 meta agent 偏重单路径深挖、有时忽略广度；Terminal-Bench 上不计 harness 修改成本。 | §5；§5.2；§5.3；App. B.2；App. A.1 "Cost" |
+| 补充 | 作者写到：Terminal-Bench 结果可能源于模型不够强、训练期已针对 Terminal-Bench 优化、分数已高、或 Terminal-Bench 对 harness 不敏感（最小 shell + 基础 prompt 已够）；Terminal-Bench 上的结论不外推到 ARC-AGI-3 / EdgeBench（那里 Harness Scaling 优于 Sequential Refinement）；Table 12 的计数"衡量使用而非价值"；EdgeBench 上 meta agent 偏重单路径深挖、有时忽略广度；Terminal-Bench 上不计 harness 修改成本。 | §5；§5.2；§5.3；App. B.2；App. A.1 "Cost" |
