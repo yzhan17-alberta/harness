@@ -2,7 +2,7 @@
 
 论文：*What Aggregate Scores Miss: Measuring Item-Level Regressions in Commercial LLM API Migrations*（Xiaonan Xu, Wenjing Wu；Georgia Institute of Technology / University of Colorado Boulder；arXiv:2608.17719，2026 年 8 月）
 
-注：这是一篇测量论文，不优化、不修改任何东西。它把商用 API 的模型版本升级当作"依赖升级"来做逐题回归测量：客户端代码与请求参数全部不变，只换 model id，然后用重复采样 + 统计检验判断每道题是可靠改善、可靠退化、实际等价还是不确定。§2 各行按此如实填写。
+这是一篇测量论文，并没有优化、不修改任何东西。它把商用 API 的模型版本升级当作"依赖升级"来做逐题回归测量：客户端代码与请求参数全部不变，只换 model id，然后用重复采样 + 统计检验判断每道题是可靠改善、可靠退化、实际等价还是不确定。
 
 ## 1. 场景与输入
 
