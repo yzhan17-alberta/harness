@@ -78,14 +78,13 @@
 
 | 局限 | 原文依据 |
 |---|---|
-| （作者自认）单基准（FAMMA）、单模型家族（Claude 同时作学生与教师），不能确定分类法、skill 格式、精炼动态能否迁移到其他领域或架构。 | §6 Limitations |
-| （作者自认）FAMMA 的 OCR 文本可能让 skill 编码伪影启发式，报告的回归率可能高估干净数据上的情况。 | §6 Limitations |
-| （作者自认）纯基准评估，生产金融流程中的实际价值未验证。 | §6 Limitations |
-| （作者自认）selector 整包加载子领域全部文件导致不必要指引与回归；未做 pattern 级选择与剪枝。 | §5.1；§6 Future Work |
-| （作者自认）结果在自建切分上，不可与 Xue et al. 原报告直接比较；GEPA / ACE 此前未在 FAMMA 上评估。 | §4.2；§4.4 |
-| 统计显著性/方差：未说明；全部为 temperature 0 运行，重复次数未说明，无置信区间、无检验。Table 5 的 −2.33 pp 在 300 题上约 7 题之差，MC / Open 子集更小。 | §4.5；Table 5 |
-| （核对）Table 5 的 "own skills" 行（69.67，+5.00）对应 Table 3 的 Haiku 4.5 warm-up 库，而非最佳 E2 库（70.66）；cross-transfer 行所用的 Haiku 3.5 skill 库是 warm-up 还是 E2：未说明。 | Table 3；Table 5 |
-| （核对）Table 2 费用把 Qwen 判官与 MC 选择 token 按 Haiku 3.5 价保守计入，同时称实际约低 10 倍，故 $ 数字是上界而非实付。 | Table 2 |
-| （核对）§5.4 "跨代复用不太可能有正回报、可能伤害更强模型"的结论建立在一个方向（弱→强）、一个域（算术）、一次运行上；非算术方向未测。 | §5.4；Table 5 |
-| （核对）十类 error taxonomy 的具体列表、selector 模型、GEPA / ACE 适配细节、temperature 相关说明均在脚注 3、4、9、10，HTML 版未渲染，无法核对基线公平性。 | §3；§3.1；§4.4；§4.5 |
-| （核对）Haiku 4.5 非算术 warm-up 为负（−0.79），原文未分析原因。 | Table 3 |
+| （作者写到）单基准（FAMMA）、单模型家族（Claude 同时作学生与教师），不能确定分类法、skill 格式、精炼动态能否迁移到其他领域或架构。 | §6 Limitations |
+| （作者）FAMMA 的 OCR 文本可能让 skill 编码伪影启发式，报告的回归率可能高估干净数据上的情况。 | §6 Limitations |
+| （作者）纯基准评估，生产金融流程中的实际价值未验证。 | §6 Limitations |
+| （作者）selector 整包加载子领域全部文件导致不必要指引与回归；未做 pattern 级选择与剪枝。 | §5.1；§6 Future Work |
+| （作者）结果在自建切分上，不可与 Xue et al. 原报告直接比较；GEPA / ACE 此前未在 FAMMA 上评估。 | §4.2；§4.4 |
+
+| Table 5 的 "own skills" 行（69.67，+5.00）对应 Table 3 的 Haiku 4.5 warm-up 库，而非最佳 E2 库（70.66）；cross-transfer 行所用的 Haiku 3.5 skill 库是 warm-up 还是 E2：未说明。 | Table 3；Table 5 |
+
+
+
